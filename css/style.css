@@ -3,9 +3,8 @@
     padding: 0;
     box-sizing: border-box;
 }
-@font-face {
-    font-family: Lato; /* Имя шрифта */
-    src: url("../fonts/Lato-Light.ttf"); /* Путь к файлу со шрифтом */
+body {
+    font-family: 'Lato', sans-serif;
 }
 .header {
     background-color: #222;
@@ -55,25 +54,33 @@
 }
 .site_heading {
     margin-right: 91px;
-    font-family: Lato, sans-serif;
     font-style: normal;
-    font-weight: 900;
+    font-weight: 700;
     font-size: 40px;
     line-height: 58px;
     color: #222222;
 }
+.site_heading_bold {
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 58px;
+    text-align: left;
+}
 .title_color {
     color: #F16D7F;
 }
+/* Products*/
 
 .products {
     max-height: 600px;
 }
-.products_top {
+.products_wrap {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
-.products_top_item {
+.products_item {
     width: 360px;
     height: 260px;
     margin-top: 65px;
@@ -87,7 +94,9 @@
 }
 .blackout {
     display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
     height: 100%;
     font-size: 16px;
     line-height: 19px;
@@ -95,15 +104,30 @@
     color: #FFFFFF;
     background: rgba(33, 22, 22, 0.7);
 }
-.blackout_centr {
-    margin: 0 auto;
-}
-.products_bottom {
-    max-width: 100%;
+.products_item_big {
+    width: 100%;
     height: 180px;
     margin-top: 30px;
     background: url("../img/prod4.png");
 }
+.blackout_text {
+    color: #FFFFFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19px;
+    text-align: center;
+}
+.blackout_text_color{
+    color: #F16D7F;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 29px;
+    text-align: center;
+}
+/* Categories*/
+
 .categories {
     padding-top: 96px;
     padding-bottom: 96px;
@@ -113,18 +137,24 @@
 }
 .heading2 {
     font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
     line-height: 36px;
+    text-align: left;
     color: #222222;
 }
-.heading4 {
+.heading3 {
     margin: 25px 28px 0 17px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: left;
     font-size: 13px;
     line-height: 16px;
     color: #000000;
 }
 
 .card_list {
-    margin-top: 48px;
+    margin-top: 18px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -141,7 +171,7 @@
     font-weight: 300;
     font-size: 14px;
     line-height: 17px;
-    color: #5D5D5D;
+    color: #9F9F9F;
 }
 .color_red {
     color: red;
@@ -153,9 +183,14 @@
     margin-top: 48px;
     padding: 14px 38px;
     border: 1px solid #FF6A6A;
+    font-style: normal;
+    font-weight: 400;
+    text-align: left;
     color: #F16D7F;
     background: #FFFFFF;
 }
+/*Feedback*/
+
 .feedback {
     height: 340px;
     background-color: #222224;
@@ -171,13 +206,17 @@
     margin-top: 28px;
     margin-bottom: 16px;
     font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
     line-height: 24px;
+    text-align: left;
     color: #FBFBFB;
 }
 .feedback_text {
     font-weight: 300;
     font-size: 14px;
     line-height: 17px;
+    font-style: normal;
     text-align: center;
     color: #FBFBFB;
 }
@@ -188,6 +227,8 @@
     justify-content: space-between;
     align-items: center;
 }
+/*Footer*/
+
 .footer {
     height: 520px;
     background: url("../img/photosubscribe.png");
@@ -210,8 +251,7 @@
 .footer_text {
     max-width: 360px;
     padding-top: 20px;
-    font-family: Lato, sans-serif;
-    font-style: normal;
+    font-style: italic;
     font-weight: normal;
     font-size: 20px;
     line-height: 24px;
@@ -224,10 +264,18 @@
     align-items: center;
 }
 .input_text {
-    font-family: Lato, sans-serif;
+    font-style: normal;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+    color: #222224;
+}
+.input_text_titel {
     font-style: normal;
     font-size: 24px;
-    line-height: 167.2%;
+    font-weight: 700;
+    line-height: 40px;
     text-align: center;
     color: #222224;
 }
@@ -259,9 +307,8 @@
     background: #222222;
 }
 .footer_left {
-    font-family: Lato, sans-serif;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 16px;
     line-height: 19px;
     color: #FBFBFB;
