@@ -44,7 +44,16 @@ body {
     justify-content: flex-end;
     background: url("../img/titel.png");
     background-repeat: no-repeat;
-    background-position: left;
+    background-position: -200px;
+}
+.title_catalog {
+    background-color: #F1E4E6;
+}
+.title_wrap_catalog {
+    min-height: 148px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .liner {
     height: 92px;
@@ -68,6 +77,14 @@ body {
     text-align: left;
 }
 .title_color {
+    color: #F16D7F;
+}
+.heading1_color {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 29px;
+    text-align: left;
     color: #F16D7F;
 }
 /* Products*/
@@ -152,7 +169,61 @@ body {
     line-height: 16px;
     color: #000000;
 }
-
+.categories_padding {
+    padding-top: 50px;
+}
+.categories_choice {
+    width: 100%;
+    padding-right: 450px;
+    display: flex;
+    justify-content: space-between;
+}
+.categories_sort {
+    width: 330px;
+    display: flex;
+    justify-content: space-between;
+}
+details {
+    margin-bottom: 20px;
+}
+.det_categories {
+    max-width: 300px;
+    margin-left: 70px;
+}
+.categories_sort_det {
+    max-width: 300px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+}
+::-webkit-details-marker {
+    display: none;
+}
+ul {
+    list-style-type: none;
+}
+.categories_det {
+    display: block;
+    padding: 10px;
+    outline: none;
+}
+.categories_det_item {
+    display: block;
+    border-left: 10px solid #F16D7F;
+    border-bottom: 1px solid #EBEBEB;
+    padding: 10px;
+    outline: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #EF5B70;
+}
+.summary_img {
+    margin-left: 10px;
+}
 .card_list {
     margin-top: 18px;
     display: flex;
@@ -188,6 +259,26 @@ body {
     text-align: left;
     color: #F16D7F;
     background: #FFFFFF;
+}
+.pagination {
+    width: 283px;
+    display: flex;
+    margin-top: 48px;
+    justify-content: space-between;
+    border: 1px solid #EBEBEB;
+}
+.page_item {
+    margin: 12px auto;
+}
+.page_link {
+    text-decoration: none;
+    color: #EBEBEB;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+}
+.active {
+    color: #EF5B70;
 }
 /*Feedback*/
 
