@@ -47,7 +47,7 @@
         <div class="wrap">
             <div class="categories_choice">
                 <details class="det_categories">
-                    <summary class="categories_det">FILTER<img class="summary_img" src="img/Vector3.svg"></summary>
+                    <summary class="categories_det">FILTER<img class="summary_img" src="img/Vector3.svg" alt="foto"></summary>
                     <details>
                         <summary class="categories_det_item">CATEGORY</summary>
                         <ul>
@@ -97,30 +97,28 @@
                 </details>
                 <div class="categories_sort">
                     <details class="categories_sort_det">
-                        <summary class="categories_det">TRENDING NOW<img class="summary_img" src="img/Vector4.svg"></summary>
-                            <ul>
-                                <li><input type="checkbox" name="a" value="XS">XS</li>
-                                <li><input type="checkbox" name="a" value="S">S</li>
-                                <li><input type="checkbox" name="a" value="M">M</li>
-                                <li><input type="checkbox" name="a" value="L">L</li>
-                            </ul>
-                    </details>
-                    <details class="categories_sort_det">
-                        <summary class="categories_det">SIZE <img class="summary_img" src="img/Vector4.svg"></summary>
+                        <summary class="categories_det">TRENDING NOW<img class="summary_img" src="img/Vector4.svg" alt="foto"></summary>
                         <ul>
-                            <li><input type="checkbox" name="a" value="XS">XS</li>
-                            <li><input type="checkbox" name="a" value="S">S</li>
-                            <li><input type="checkbox" name="a" value="M">M</li>
-                            <li><input type="checkbox" name="a" value="L">L</li>
+                            <li><input type="checkbox" name="size" id="trend_s"><label class="size" for="trend_s">White</label></li>
+                            <li><input type="checkbox" name="size" id="trend_m"><label class="size" for="trend_m">Black</label></li>
+                            <li><input type="checkbox" name="size" id="trend_l"><label class="size" for="trend_l">Red</label></li>
                         </ul>
                     </details>
                     <details class="categories_sort_det">
-                        <summary class="categories_det">PRICE<img class="summary_img" src="img/Vector4.svg"></summary>
+                        <summary class="categories_det">SIZE <img class="summary_img" src="img/Vector4.svg" alt="foto"></summary>
                         <ul>
-                            <li><input type="checkbox" name="a" value="XS">XS</li>
-                            <li><input type="checkbox" name="a" value="S">S</li>
-                            <li><input type="checkbox" name="a" value="M">M</li>
-                            <li><input type="checkbox" name="a" value="L">L</li>
+                            <li><input type="checkbox" name="size" value="XS" id="size-xs"><label class="size" for="size-xs">XS</label></li>
+                            <li><input type="checkbox" name="size" value="S" id="size-s"><label class="size" for="size-s">S</label></li>
+                            <li><input type="checkbox" name="size" value="M" id="size-m"><label class="size" for="size-m">M</label></li>
+                            <li><input type="checkbox" name="size" value="L" id="size-l"><label class="size" for="size-l">L</label></li>
+                        </ul>
+                    </details>
+                    <details class="categories_sort_det">
+                        <summary class="categories_det">PRICE<img class="summary_img" src="img/Vector4.svg" alt="foto"></summary>
+                        <ul>
+                            <li><input type="checkbox" name="price" id="price_s"><label class="size" for="price_s">100-1000</label></li>
+                            <li><input type="checkbox" name="price" id="price_m"><label class="size" for="price_m">1000-10000</label></li>
+                            <li><input type="checkbox" name="price" id="price_l"><label class="size" for="price_l">10000-50000</label></li>
                         </ul>
                     </details>
                 </div>
@@ -264,8 +262,8 @@
                         FOR OUR NEWLETTER AND PROMOTION</p>
                 </div>
                 <div class="input-group">
-                    <input type="text" class="form-input" placeholder="Enter Your Email">
-                    <button class="input_btn" type="button">Button</button>
+                   <label><input type="text" class="form-input" placeholder="Enter Your Email"></label>
+                    <button class="input_btn" type="submit">Button</button>
                 </div>
             </div>
         </div>

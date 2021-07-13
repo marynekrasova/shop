@@ -224,6 +224,9 @@ ul {
 .summary_img {
     margin-left: 10px;
 }
+.size {
+    padding-left: 10px;
+}
 .card_list {
     margin-top: 18px;
     display: flex;
