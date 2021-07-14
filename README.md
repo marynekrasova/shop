@@ -1,2 +1,2 @@
 # shop
-Create a main page.
+https://marynekrasova.github.io/shop/
