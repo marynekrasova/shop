@@ -1,0 +1,21 @@
+.header {
+  background-color: #222;
+  min-height: 75px;
+}
+.header_wrap {
+  padding: 18px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.header_right {
+  width: 168px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header_left {
+  width: 111px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
