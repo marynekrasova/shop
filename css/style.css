@@ -469,16 +469,14 @@ hr {
 
 .cart {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
   margin-top: 96px;
   margin-bottom: 96px;
 }
 
 .card_cart {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
   width: 650px;
   height: 309px;
 }
@@ -486,12 +484,38 @@ hr {
 .card_price {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
+  max-width: 650px;
+  margin-left: 30px;
+  margin-top: 22px;
 }
 
 .card_video {
   background-color: #F7E4E2;
+}
+
+.card_btngr {
+  width: 650px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 65px;
+}
+
+.btn_colorb {
+  font-style: normal;
+  font-weight: 300;
+  margin-top: 5px;
+  font-size: 14px;
+  line-height: 17px;
+  border: 1px solid #A4A4A4;
+  color: #000000;
+}
+
+.btn_colorp {
+  background: #EF5B70;
+  color: #FFFFFF;
+  margin-top: 17px;
 }
 
 .card_text {
@@ -533,11 +557,109 @@ hr {
   opacity: 1;
 }
 
+.heading3_price {
+  max-width: 200px;
+  margin-bottom: 42px;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 29px;
+  text-align: left;
+  color: #222222;
+}
+
+.price_text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color: #575757;
+}
+
+.price_q {
+  width: 44px;
+  height: 24px;
+  margin-left: 25px;
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+  font-size: 18px;
+  line-height: 22px;
+  color: #656565;
+}
+
+.price {
+  margin-left: 15px;
+}
+
 /*Form for basket*/
 .main_form {
-  background: #EF5B70;
-  width: 272px;
-  height: 600px;
+  max-width: 350px;
+  margin-top: 45px;
+}
+
+.form_hr {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.form_reg {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.form_text {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+  margin-bottom: 20px;
+}
+
+.form_input_text {
+  width: 100%;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #222222;
+  margin-bottom: 20px;
+  padding-top: 13px;
+  padding-left: 17px;
+  padding-bottom: 16px;
+}
+
+.main_form_total {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 44px 20px;
+  background: #F5F3F3;
+}
+
+.form_totals {
+  align-self: flex-end;
+  margin-bottom: 12px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 13px;
+  color: #222222;
+}
+
+.form_total {
+  align-self: flex-end;
+  margin-bottom: 12px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
 }
 
 /*Feedback*/

@@ -24,26 +24,46 @@
 }
 .cart {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
   margin-top: 96px;
   margin-bottom: 96px;
 }
 .card_cart {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
   width: 650px;
   height: 309px;
 }
 .card_price {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
+  max-width: 650px;
+  margin-left: 30px;
+  margin-top: 22px;
 }
 .card_video {
   background-color: #F7E4E2;
+}
+.card_btngr {
+  width: 650px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 65px;
+}
+.btn_colorb {
+  @include fonts_light;
+  margin-top: 5px;
+  font-size: 14px;
+  line-height: 17px;
+  border: 1px solid #A4A4A4;
+  color: #000000;
+}
+.btn_colorp {
+  background: $main-pinklight ;
+  color: #FFFFFF;
+  margin-top: 17px;
 }
 .card_text {
   margin: 12px 28px 0 17px;
@@ -78,5 +98,31 @@
     opacity: 1;
   }
 }
-
-
+.heading3_price {
+  max-width: 200px;
+  margin-bottom: 42px;
+  font-size: 24px;
+  @include fonts;
+  line-height: 29px;
+  text-align: left;
+  color: #222222;
+}
+.price_text {
+  @include fonts;
+  font-size: 22px;
+  line-height: 26px;
+  color: #575757;
+}
+.price_q {
+  width: 44px;
+  height: 24px;
+  margin-left: 25px;
+  @include fonts;
+  text-align: center;
+  font-size: 18px;
+  line-height: 22px;
+  color: #656565;
+}
+.price {
+  margin-left: 15px;
+}
