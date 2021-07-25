@@ -179,7 +179,8 @@ body {
     justify-content: space-between;
 }
 .categories_sort {
-    width: 330px;
+    width: 400px;
+    height: 18px;
     display: flex;
     justify-content: space-between;
 }
@@ -208,6 +209,11 @@ ul {
     display: block;
     padding: 10px;
     outline: none;
+    color: #6F6E6E;
+;
+}
+.categories_det:hover {
+    color: #EF5B70;
 }
 .categories_det_item {
     display: block;
@@ -223,11 +229,114 @@ ul {
 }
 .summary_img {
     margin-left: 10px;
+    fill: black;
+}
+.summary_img:hover {
+    fill: #EF5B70;
 }
 .size {
     padding-left: 10px;
 }
+.slider {
+    width: 100%;
+    height: 777px;
+    background-image: url("../img/Layer 42.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #F7F7F7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.slider_arrow {
+    width: 47px;
+    height: 47px;
+    color: #000000;
+    background: rgba(42, 42, 42, 0.15);
+    display: flex;
+    align-items: center;
+}
+.slider_arrow:hover {
+    color: #F16D7F;
+}
+.products_pm {
+    padding-top: 0;
+    margin-top: -50px;
+}
+.order {
+    height: 600px;
+    background-color: #FFFFFF;
+    border: 1px solid #EAEAEA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.order_top {
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+.liner_prod {
+    width: 63px;
+    height: 3px;
+    background: #EF5B70;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+.order_title {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #F16D7F;
+}
+.order_text {
+    margin-bottom: 48px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 22px;
+    text-align: left;
+    color: #4D4D4D;
+}
+.order_text_cont {
+    max-width: 570px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #5E5E5E;
+}
+.order_prise {
+    margin-top: 32px;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 29px;
+    text-align: left;
+    color: #EF5B70;
+}
+hr {
+    width: 641px;
+    border: 1px solid #EAEAEA;
+}
+.order_bottom {
+    height: 40%;
+    margin-top: 65px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.basket {
+    fill: #EF5B70;
+    margin-right: 23px;
+}
 .card_list {
+    max-width: 1140px;
     margin-top: 18px;
     display: flex;
     flex-wrap: wrap;
@@ -238,7 +347,8 @@ ul {
     width: 360px;
     height: 581px;
     background: #F8F8F8;
-
+    position: relative;
+    transition: 0.5s;
 }
 .card_text {
     margin: 12px 28px 0 17px;
@@ -253,6 +363,25 @@ ul {
 .card_img {
     max-width: 360px;
 }
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 581px;
+    background-color: rgba(58, 56, 56, 0.83);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.5s;
+}
+.card:hover {
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.15);
+}
+.card:hover .overlay {
+    opacity: 1;
+}
 .btn {
     margin-top: 48px;
     padding: 14px 38px;
@@ -260,8 +389,12 @@ ul {
     font-style: normal;
     font-weight: 400;
     text-align: left;
+    font-size: 16px;
+    line-height: 19px;
     color: #F16D7F;
     background: #FFFFFF;
+    display: flex;
+    align-items: center;
 }
 .pagination {
     width: 283px;
@@ -282,6 +415,10 @@ ul {
 }
 .active {
     color: #EF5B70;
+}
+.page_link:hover {
+    color: black;
+    background: #EBEBEB;
 }
 /*Feedback*/
 
@@ -407,5 +544,27 @@ ul {
     line-height: 19px;
     color: #FBFBFB;
 }
+.footer_right {
+    display: flex;
+    justify-content: flex-end;
+}
+.social_link {
+    color: #000;
+    text-decoration: none;
+    font-size:14px;
+    background-color: #FFFFFF;;
+    padding: 10px;
+    margin: 5px;
+    width: 35px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social_link:hover {
+    color: #FFFFFF;
+    background-color: #F16D7F;
+}
+
 
 
