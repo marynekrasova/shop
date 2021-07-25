@@ -1,6 +1,5 @@
 .main_form {
   max-width: 350px;
-  margin-top: 45px;
 }
 .form_hr {
   width: 100%;
@@ -12,6 +11,7 @@
   align-items: flex-start;
   justify-content: space-between;
   margin-bottom: 60px;
+  margin-top: 45px;
 }
 .form_text {
   @include fonts_light;
@@ -54,4 +54,35 @@
   font-size: 16px;
   line-height: 19px;
   color: #222222;
+}
+.cart_reg {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 33px;
+}
+#male {
+  margin-right: 10px;
+  width: 17px;
+  height: 17px;
+}
+#female {
+  margin-right: 10px;
+  margin-left: 10px;
+  width: 17px;
+  height: 17px;
+}
+.form_radio {
+  margin-top: 12px;
+  @include fonts_light;
+  font-size: 11px;
+  line-height: 13px;
+  color: #000000;
+}
+.form_text_sm {
+  @include fonts_light;
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1;
 }

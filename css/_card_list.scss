@@ -4,6 +4,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  z-index: 1;
 }
 .card {
   margin-top: 30px;
@@ -12,15 +13,18 @@
   background: #F8F8F8;
   position: relative;
   transition: 0.5s;
-  &:hover {
-    box-shadow: $shadow;
-    opacity: 1;
-  }
+
 }
 .close {
   position: absolute;
   right: 22px;
   top: 28px;
+  border: none;
+  background: #FFFFFF;
+  &:hover {
+    background: #E1E1E1;
+    cursor: pointer;
+  }
 }
 .cart {
   display: flex;
@@ -33,6 +37,8 @@
   display: flex;
   width: 650px;
   height: 309px;
+  box-shadow: $shadow;
+  opacity: 1;
 }
 .card_price {
   display: flex;
@@ -72,11 +78,24 @@
   line-height: 17px;
   color: #9F9F9F;
 }
+.reg_text {
+  width: 650px;
+  @include fonts_light;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+}
 .color_red {
   color: red;
 }
 .card_img {
   max-width: 360px;
+  transition:0.5s;
+  &:hover {
+    z-index: 1;
+    transform: scale(1.5);
+    cursor: zoom-in;
+  }
 }
 .card_img_c {
   max-width: 360px;
@@ -96,9 +115,31 @@
   justify-content: center;
   align-items: center;
   opacity: 0;
-  transition: 0.5s;
+  transition: 0.5s ease-in;
   &:hover {
     opacity: 1;
+  }
+}
+.card_btn {
+  margin-top: 48px;
+  padding: 14px 38px;
+  border: 1px solid #FFFFFF;
+  @include fonts;
+  text-align: left;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  transition: 0.5s ease-in;
+  fill: #FFFFFF;
+  background-color: rgba(58, 56, 56, 0.83);
+  &:hover{
+    cursor: pointer;
+    color: $main-pink;
+    border: 1px solid $main-pink;
+    fill: $main-pink;
   }
 }
 .heading3_price {
@@ -111,10 +152,7 @@
   color: #222222;
 }
 .price_text {
-  @include fonts;
-  font-size: 22px;
-  line-height: 26px;
-  color: #575757;
+ margin-bottom: 22px;
 }
 .price_q {
   width: 44px;

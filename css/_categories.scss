@@ -40,11 +40,18 @@ details {
   margin-bottom: 20px;
 }
 .det_categories {
-  max-width: 300px;
-  margin-left: 70px;
-  &:active {
+  width: 360px;
+  position: relative;
+  &:hover {
     box-shadow: $shadow;
   }
+}
+.fiter_content {
+  position: absolute;
+  background-color: gold;
+  width: 360px;
+  left: 0;
+  box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
 }
 .categories_sort_det {
   max-width: 300px;
@@ -52,6 +59,7 @@ details {
   line-height: 17px;
   color: #6F6E6E;
   @include fonts;
+  position: relative;
 }
 ::-webkit-details-marker {
   display: none;
@@ -64,9 +72,23 @@ ul {
   padding: 10px;
   outline: none;
   color: #6F6E6E;
+  fill: #6F6E6E;
+  transition: 0.5s ease-in;
+  &:hover {
+    cursor: pointer;
+    color: $main-pinklight;
+    fill: $main-pinklight;
+  }
 }
-.categories_det:hover {
-  color: $main-pinklight;
+.filter_content {
+  width: 100%;
+  padding-left: 17px;
+  position: absolute;
+  background: #FFFFFF;
+  z-index: 10;
+}
+.det_categories_details {
+  background: #FFFFFF;
 }
 .categories_det_item {
   display: block;
@@ -79,12 +101,19 @@ ul {
   line-height: 17px;
   color: $main-pinklight;
 }
+.chose_ul {
+  background: #FFFFFF;
+  margin-left: 17px;
+  @include fonts;
+  font-size: 14px;
+  line-height: 17px;
+  color: #6F6E6E;
+}
+.chose_ul li:hover {
+  color: $main-pinklight;
+}
 .summary_img {
   margin-left: 10px;
-  fill: black;
-}
-.summary_img:hover {
-  fill: $main-pinklight;
 }
 .size {
   padding-left: 10px;
@@ -183,6 +212,7 @@ hr {
 .basket {
   fill: $main-pinklight;
   margin-right: 23px;
+  transition: 0.5s ease-in;
 }
 .btn {
   margin-top: 48px;
@@ -197,6 +227,21 @@ hr {
   display: flex;
   align-items: center;
   text-decoration: none;
+  transition: 0.5s ease-in;
+  &:hover {
+    background: $main-pink;
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    cursor: pointer;
+  }
+  &:hover .basket {
+    fill: #FFFFFF;
+  }
+}
+.btn_arrow {
+  fill: #FFFFFF;
+  transition: 0.5s ease-in;
+  margin-left: 10px;
 }
 .pagination {
   width: 283px;
@@ -214,6 +259,7 @@ hr {
   @include fonts_light;
   font-size: 16px;
   line-height: 19px;
+  transition: 0.5s ease-in;
 }
 .active {
   color: $main-pinklight;

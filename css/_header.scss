@@ -12,10 +12,86 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 .header_left {
   width: 111px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.header_menu {
+fill: #FFFFFF;
+  &:hover {
+    transform: rotate(90deg);
+    fill: $main-pink;
+  }
+}
+#menu {
+  display: none;
+}
+.header_account {
+  fill: #FFFFFF;
+  &:hover {
+    fill: $main-pink;
+  }
+}
+.header_basket {
+  fill: #FFFFFF;
+  margin-left: 10px;
+  &:hover {
+    fill: $main-pink;
+  }
+}
+.basket_count {
+  background: $main-pink;
+  border-radius: 50%;
+  width: 19px;
+  height: 19px;
+  position: absolute;
+  top: -5px;
+  right: -8px;
+  padding: 2px;
+  @include fonts;
+  text-align: center;
+  font-size: 12px;
+  line-height: 14px;
+  color: #FFFFFF;
+}
+.nav {
+  background-color: #FFFFFF;
+  display: none;
+  width: 300px;
+  position: absolute;
+  right: 0;
+  top: 77px;
+  box-shadow: $shadow;
+}
+
+#menu:checked ~ .nav {
+  display: block;
+}
+.nav_link {
+  text-decoration: none;
+  color: $main-pink;
+  &:hover {
+    color: #ff1472;
+  }
+}
+.nav_item {
+  margin: 10px;
+  @include fonts;
+  font-size: 14px;
+  line-height: 17px;
+}
+.nav_close {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  border: none;
+  background: #FFFFFF;
+  &:hover {
+    background: #E1E1E1;
+    cursor: pointer;
+  }
 }

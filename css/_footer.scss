@@ -70,7 +70,10 @@
   border-radius: 0 10px 10px 0;
   color: #FFFFFF;
   border: none;
-;
+  transition: 0.5s ease-in;
+  &:hover {
+    background: $main-pinklight;
+  }
 }
 .footer_bottom {
   height: 15%;
