@@ -1,0 +1,105 @@
+.footer {
+  height: 520px;
+  background: url("../img/photosubscribe.png");
+  background-size: cover;
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+.footer_top {
+  height: 85%;
+}
+.footer_flex {
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer_card {
+  max-width: 360px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer_text {
+  max-width: 360px;
+  padding-top: 20px;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #222224;
+}
+.input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.input_text {
+  @include fonts;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  color: #222224;
+}
+.input_text_titel {
+  @include fonts_bold;
+  font-size: 24px;
+  line-height: 40px;
+  text-align: center;
+  color: #222224;
+}
+.input_group {
+  max-width: 360px;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+.form-input {
+  width: 256px;
+  height: 50px;
+  background: #E1E1E1;
+  border-radius: 10px 0 0 10px;
+  border: none;
+  padding-left: 22px;
+}
+.input_btn {
+  width: 100px;
+  height: 50px;
+  background: $main-pink;
+  border-radius: 0 10px 10px 0;
+  color: #FFFFFF;
+  border: none;
+;
+}
+.footer_bottom {
+  height: 15%;
+  background: #222222;
+}
+.footer_left {
+  @include fonts;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FBFBFB;
+}
+.footer_right {
+  display: flex;
+  justify-content: flex-end;
+}
+.social_link {
+  color: #000;
+  text-decoration: none;
+  font-size:14px;
+  background-color: #FFFFFF;;
+  padding: 10px;
+  margin: 5px;
+  width: 35px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:hover {
+    color: #FFFFFF;
+    background-color: $main-pink;
+  }
+}

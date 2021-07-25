@@ -1,0 +1,52 @@
+.title {
+  min-height: 760px;
+  background-color: #F1E4E6;
+}
+.title_wrap {
+  display: flex;
+  align-items: center;
+  min-height: 760px;
+  justify-content: flex-end;
+  background: url("../img/titel.png");
+  background-repeat: no-repeat;
+  background-position: -200px;
+}
+.title_catalog {
+  background-color: #F1E4E6;
+}
+.title_wrap_catalog {
+  min-height: 148px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.liner {
+  height: 92px;
+  width: 12px;
+  background: $main-pink;
+  margin-right: 16px;
+}
+.site_heading {
+  margin-right: 91px;
+  @include fonts_bold;
+  font-size: 40px;
+  line-height: 58px;
+  color: #222222;
+}
+.site_heading_bold {
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 58px;
+  text-align: left;
+}
+.title_color {
+  color: $main-pink;
+}
+.heading1_color {
+  font-size: 24px;
+  @include fonts;
+  line-height: 29px;
+  text-align: left;
+  color: $main-pink;
+}

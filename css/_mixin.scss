@@ -1,0 +1,12 @@
+@mixin fonts {
+  font-style: normal;
+  font-weight: 400;
+}
+@mixin fonts_light {
+  font-style: normal;
+  font-weight: 300;
+}
+@mixin fonts_bold {
+  font-style: normal;
+  font-weight: 700;
+}

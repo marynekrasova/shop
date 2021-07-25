@@ -1,0 +1,34 @@
+.feedback {
+  height: 340px;
+  background-color: #222224;
+}
+.feedback_card {
+  width: 360px;
+  height: 133px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.feedback_heading4 {
+  margin-top: 28px;
+  margin-bottom: 16px;
+  font-size: 20px;
+  @include fonts;
+  line-height: 24px;
+  text-align: left;
+  color: #FBFBFB;
+}
+.feedback_text {
+  @include fonts_light;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #FBFBFB;
+}
+
+.container_flex {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
