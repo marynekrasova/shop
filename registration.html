@@ -101,65 +101,82 @@
 <section class="title_catalog">
     <div class="wrap">
         <div class="title_wrap_catalog">
-            <h1 class="heading1_color">SHOPPING CART</h1>
+            <h1 class="heading1_color">REGISTRATION</h1>
         </div>
     </div>
 </section>
 <main class="main">
     <div class="wrap">
-    <section class="cart">
-            <div class="card_list card_price">
-                <div class="card card_cart">
-                    <img class="card_img_c" src="img/Image4.png" alt="img">
-                    <div class="card_price">
-                        <h3 class="heading3_price">MANGO  PEOPLE  T-SHIRT</h3>
-                        <p class="price_text">Price: <span class="title_color">$300</span></p>
-                        <p class="price_text">Color: Red</p>
-                        <p class="price_text">Size: Xl	</p>
-                        <p class="price_text">Quantity:	<input min="1" value="1" class="price_q" type="number"></p>
-                        <button class="close">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
-                                <path d="M11.2453 9L17.5302 2.71516C17.8285 2.41741 17.9962 2.01336 17.9966 1.59191C17.997 1.17045 17.8299 0.76611 17.5322 0.467833C17.2344 0.169555 16.8304 0.00177586 16.4089 0.00140366C15.9875 0.00103146 15.5831 0.168097 15.2848 0.465848L9 6.75069L2.71516 0.465848C2.41688 0.167571 2.01233 0 1.5905 0C1.16868 0 0.764125 0.167571 0.465848 0.465848C0.167571 0.764125 0 1.16868 0 1.5905C0 2.01233 0.167571 2.41688 0.465848 2.71516L6.75069 9L0.465848 15.2848C0.167571 15.5831 0 15.9877 0 16.4095C0 16.8313 0.167571 17.2359 0.465848 17.5342C0.764125 17.8324 1.16868 18 1.5905 18C2.01233 18 2.41688 17.8324 2.71516 17.5342L9 11.2493L15.2848 17.5342C15.5831 17.8324 15.9877 18 16.4095 18C16.8313 18 17.2359 17.8324 17.5342 17.5342C17.8324 17.2359 18 16.8313 18 16.4095C18 15.9877 17.8324 15.5831 17.5342 15.2848L11.2453 9Z" fill="#575757"/>
-                            </svg>
-                        </button>
+        <section class="cart">
+            <div class="main_form">
+                <form class="cart_reg">
+                    <p class="form_text">Your Name</p>
+                    <input class="form_input_text" type="text" placeholder="First Name">
+                    <input class="form_input_text" type="text" placeholder="Last Name">
+                    <div class="form_radio">
+                        <input type="radio" name="gender" id="male" value="male" checked>
+                        <label for="male">Male</label>
+                        <input type="radio" name="gender" id="female" value="female">
+                        <label for="female">Female</label>
                     </div>
-                </div>
-                <div class="card card_cart">
-                    <img class="card_img_c" src="img/product3.png" alt="img">
-                    <div class="card_price">
-                    <h3 class="heading3_price">MANGO  PEOPLE  T-SHIRT</h3>
-                        <p class="price_text">Price: $300</p>
-                        <p class="price_text">Color: Red</p>
-                        <p class="price_text">Size: Xl	</p>
-                        <p class="price_text">Quantity:	<input min="1" value="1" class="price_q" type="number"></p>
-                    </div>
-                    <button class="close">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
-                            <path d="M11.2453 9L17.5302 2.71516C17.8285 2.41741 17.9962 2.01336 17.9966 1.59191C17.997 1.17045 17.8299 0.76611 17.5322 0.467833C17.2344 0.169555 16.8304 0.00177586 16.4089 0.00140366C15.9875 0.00103146 15.5831 0.168097 15.2848 0.465848L9 6.75069L2.71516 0.465848C2.41688 0.167571 2.01233 0 1.5905 0C1.16868 0 0.764125 0.167571 0.465848 0.465848C0.167571 0.764125 0 1.16868 0 1.5905C0 2.01233 0.167571 2.41688 0.465848 2.71516L6.75069 9L0.465848 15.2848C0.167571 15.5831 0 15.9877 0 16.4095C0 16.8313 0.167571 17.2359 0.465848 17.5342C0.764125 17.8324 1.16868 18 1.5905 18C2.01233 18 2.41688 17.8324 2.71516 17.5342L9 11.2493L15.2848 17.5342C15.5831 17.8324 15.9877 18 16.4095 18C16.8313 18 17.2359 17.8324 17.5342 17.5342C17.8324 17.2359 18 16.8313 18 16.4095C18 15.9877 17.8324 15.5831 17.5342 15.2848L11.2453 9Z" fill="#575757"/>
+                </form>
+                <form class="cart_reg">
+                    <p class="form_text">Login details</p>
+                    <input class="form_input_text" type="email" placeholder="Email">
+                    <input class="form_input_text" type="password" placeholder="Password">
+                    <p class="form_text_sm">Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters</p>
+                    <button class="btn btn_colorp">JOIN NOW
+                        <svg class="btn_arrow" xmlns="http://www.w3.org/2000/svg" width="17" height="10" viewBox="0 0 17 10">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.54 0.208095C11.6058 0.142131 11.684
+                            0.0897967 11.77 0.0540883C11.8561 0.01838 11.9483 0 12.0415 0C12.1347 0 12.2269 0.01838
+                            12.313 0.0540883C12.399 0.0897967 12.4772 0.142131 12.543 0.208095L16.7929 4.458C16.8589
+                            4.5238 16.9112 4.60196 16.9469 4.68802C16.9826 4.77407 17.001 4.86632 17.001 4.95949C17.001
+                            5.05266 16.9826 5.14491 16.9469 5.23097C16.9112 5.31702 16.8589 5.39518 16.7929 5.46098L12.543
+                             9.71089C12.41 9.84389 12.2296 9.91861 12.0415 9.91861C11.8534 9.91861 11.673 9.84389
+                             11.54 9.71089C11.407 9.57788 11.3323 9.39749 11.3323 9.2094C11.3323 9.0213 11.407 8.84091
+                             11.54 8.70791L15.2898 4.95949L11.54 1.21107C11.474 1.14528 11.4217 1.06711 11.386 0.981059C11.3503
+                             0.895005 11.3319 0.802752 11.3319 0.709584C11.3319 0.616415 11.3503 0.524162 11.386 0.438109C11.4217
+                             0.352055 11.474 0.273891 11.54 0.208095Z"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 4.95948C0 4.77162 0.0746263
+                            4.59146 0.207462 4.45862C0.340297 4.32579 0.52046 4.25116 0.708318 4.25116H15.583C15.7708
+                            4.25116 15.951 4.32579 16.0838 4.45862C16.2167 4.59146 16.2913 4.77162 16.2913 4.95948C16.2913
+                            5.14734 16.2167 5.3275 16.0838 5.46033C15.951 5.59317 15.7708 5.6678 15.583 5.6678H0.708318C0.52046
+                            5.6678 0.340297 5.59317 0.207462 5.46033C0.0746263 5.3275 0 5.14734 0 4.95948Z"/>
                         </svg>
                     </button>
-                </div>
-                <div class="card_btngr">
-                    <button class="btn btn_colorb">CLEAR SHOPPING CART</button>
-                    <button class="btn btn_colorb">CONTINUE SHOPPING</button>
-                </div>
-            </div>
-            <div class="main_form">
-                <form class="form_reg">
-                    <p class="form_text">SHIPPING ADRESS</p>
-                    <input class="form_input_text" type="text" placeholder="Bangladesh" disabled>
-                    <input class="form_input_text" type="text" placeholder="State">
-                    <input class="form_input_text" type="text" placeholder="Postcode / Zip">
-                    <button class="btn btn_colorb">GET A QUOTE</button>
                 </form>
-                <div class="main_form_total">
-                    <p class="form_totals">SUB  TOTAL  <span class="price">$900</span></p>
-                    <p class="form_total">GRAND TOTAL<span class="title_color price"> $900</span> </p>
-                    <hr class="form_hr">
-                    <button class="btn btn_colorp" type="submit">PROCEED TO CHECKOUT</button>
-                </div>
             </div>
-    </section>
+            <div class="reg_text">
+                <h3 class="price_text">LOYALTY HAS ITS PERKS</h3>
+                <p class="price_text">Get in on the loyalty program where you can earn points and unlock serious perks.
+                    Starting with these as soon as you join:</p>
+                <p class="price_text">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 20 16" fill="none">
+                        <path d="M19.8035 0H18.0904C17.8502 0 17.6222 0.111827 17.4752 0.303176L7.3702 13.2826L2.52481 7.05754C2.45151 6.96318 2.35808 6.88688 2.25153 6.83438C2.14499 6.78187 2.0281 6.75451 1.90963 6.75437H0.196467C0.032258 6.75437 -0.0584248 6.94572 0.0420614 7.07494L6.75503 15.6981C7.06874 16.1006 7.67166 16.1006 7.98782 15.6981L19.9579 0.318087C20.0584 0.191349 19.9677 0 19.8035 0Z" fill="black"/>
+                    </svg>
+                    15% off welcome offer</p>
+                <p class="price_text">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 20 16" fill="none">
+                        <path d="M19.8035 0H18.0904C17.8502 0 17.6222 0.111827 17.4752 0.303176L7.3702 13.2826L2.52481 7.05754C2.45151 6.96318 2.35808 6.88688 2.25153 6.83438C2.14499 6.78187 2.0281 6.75451 1.90963 6.75437H0.196467C0.032258 6.75437 -0.0584248 6.94572 0.0420614 7.07494L6.75503 15.6981C7.06874 16.1006 7.67166 16.1006 7.98782 15.6981L19.9579 0.318087C20.0584 0.191349 19.9677 0 19.8035 0Z" fill="black"/>
+                    </svg>
+                    Free shipping, returns and exchanges on all orders</p>
+                <p class="price_text">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 20 16" fill="none">
+                        <path d="M19.8035 0H18.0904C17.8502 0 17.6222 0.111827 17.4752 0.303176L7.3702 13.2826L2.52481 7.05754C2.45151 6.96318 2.35808 6.88688 2.25153 6.83438C2.14499 6.78187 2.0281 6.75451 1.90963 6.75437H0.196467C0.032258 6.75437 -0.0584248 6.94572 0.0420614 7.07494L6.75503 15.6981C7.06874 16.1006 7.67166 16.1006 7.98782 15.6981L19.9579 0.318087C20.0584 0.191349 19.9677 0 19.8035 0Z" fill="black"/>
+                    </svg>
+                    $10 off a purchase on your birthday</p>
+                <p class="price_text">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 20 16" fill="none">
+                        <path d="M19.8035 0H18.0904C17.8502 0 17.6222 0.111827 17.4752 0.303176L7.3702 13.2826L2.52481 7.05754C2.45151 6.96318 2.35808 6.88688 2.25153 6.83438C2.14499 6.78187 2.0281 6.75451 1.90963 6.75437H0.196467C0.032258 6.75437 -0.0584248 6.94572 0.0420614 7.07494L6.75503 15.6981C7.06874 16.1006 7.67166 16.1006 7.98782 15.6981L19.9579 0.318087C20.0584 0.191349 19.9677 0 19.8035 0Z" fill="black"/>
+                    </svg>
+                    Early access to products</p>
+                <p class="price_text">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 20 16" fill="none">
+                        <path d="M19.8035 0H18.0904C17.8502 0 17.6222 0.111827 17.4752 0.303176L7.3702 13.2826L2.52481 7.05754C2.45151 6.96318 2.35808 6.88688 2.25153 6.83438C2.14499 6.78187 2.0281 6.75451 1.90963 6.75437H0.196467C0.032258 6.75437 -0.0584248 6.94572 0.0420614 7.07494L6.75503 15.6981C7.06874 16.1006 7.67166 16.1006 7.98782 15.6981L19.9579 0.318087C20.0584 0.191349 19.9677 0 19.8035 0Z" fill="black"/>
+                    </svg>
+                    Exclusive offers & rewards</p>
+            </div>
+        </section>
     </div>
 </main>
 <footer class="footer">
