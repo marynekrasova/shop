@@ -12,7 +12,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: relative;
 }
 .header_left {
   width: 111px;
@@ -22,6 +21,7 @@
 }
 .header_menu {
 fill: #FFFFFF;
+  transition: 0.2s ease-in;
   &:hover {
     transform: rotate(90deg);
     fill: $main-pink;
@@ -60,16 +60,19 @@ fill: #FFFFFF;
 }
 .nav {
   background-color: #FFFFFF;
-  display: none;
+  overflow: hidden;
+  height: 0;
   width: 300px;
   position: absolute;
   right: 0;
   top: 77px;
   box-shadow: $shadow;
+  transition: height ease-in 0.2s;
 }
 
 #menu:checked ~ .nav {
   display: block;
+  height: 150px;
 }
 .nav_link {
   text-decoration: none;
