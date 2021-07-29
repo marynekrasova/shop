@@ -35,24 +35,24 @@
 }
 .card_cart {
   display: flex;
-  width: 650px;
+  width: 100%;
   height: 309px;
   box-shadow: $shadow;
+  background-color: #FFFFFF;
   opacity: 1;
 }
 .card_price {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  max-width: 650px;
-  margin-left: 30px;
+  width: 650px;
   margin-top: 22px;
 }
 .card_video {
   background-color: #F7E4E2;
 }
 .card_btngr {
-  width: 650px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -145,6 +145,7 @@
 .heading3_price {
   max-width: 200px;
   margin-bottom: 42px;
+  margin-left: 30px;
   font-size: 24px;
   @include fonts;
   line-height: 29px;
@@ -152,7 +153,8 @@
   color: #222222;
 }
 .price_text {
- margin-bottom: 22px;
+  margin-bottom: 22px;
+  margin-left: 30px;
 }
 .price_q {
   width: 44px;
@@ -167,3 +169,4 @@
 .price {
   margin-left: 15px;
 }
+
