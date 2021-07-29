@@ -10,3 +10,8 @@
   font-style: normal;
   font-weight: 700;
 }
+@mixin flex {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}

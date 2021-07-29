@@ -27,8 +27,6 @@
 }
 
 .container_flex {
-  height: 100%;
-  display: flex;
+  @include flex;
   justify-content: space-between;
-  align-items: center;
 }
