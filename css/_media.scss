@@ -61,11 +61,7 @@
   .card_price {
     width: 734px;
   }
-  .main_form {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-  }
+
   .form_reg {
     width: 358px;
     margin-top: 70px;
@@ -74,6 +70,9 @@
     width: 360px;
     height: 214px;
     margin-top: 108px;
+  }
+  .slider {
+    height: 624px;
   }
 }
 /*Mobile*/
