@@ -1,5 +1,8 @@
 .main_form {
-  max-width: 350px;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .form_hr {
   width: 100%;

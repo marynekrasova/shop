@@ -13,6 +13,9 @@
   justify-content: space-between;
   align-items: center;
 }
+#basket {
+  position: relative;
+}
 .header_left {
   width: 111px;
   display: flex;
@@ -68,11 +71,23 @@ fill: #FFFFFF;
   top: 77px;
   box-shadow: $shadow;
   transition: height ease-in 0.2s;
+  z-index: 2;
 }
 
 #menu:checked ~ .nav {
   display: block;
-  height: 150px;
+  height: 50%;
+}
+
+details > summary {
+  list-style: none;
+}
+.nav_link_black {
+  text-decoration: none;
+  color: #222222;
+  &:hover {
+    color: #ff1472;
+  }
 }
 .nav_link {
   text-decoration: none;
@@ -86,6 +101,8 @@ fill: #FFFFFF;
   @include fonts;
   font-size: 14px;
   line-height: 17px;
+  color: #F16D7F;
+  cursor: pointer;
 }
 .nav_close {
   position: absolute;
