@@ -73,7 +73,11 @@ fill: #FFFFFF;
   transition: height ease-in 0.2s;
   z-index: 2;
 }
-
+.nav_list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 #menu:checked ~ .nav {
   display: block;
   height: 50%;
@@ -90,6 +94,7 @@ details > summary {
   }
 }
 .nav_link {
+  margin: 10px;
   text-decoration: none;
   color: $main-pink;
   &:hover {
@@ -103,6 +108,9 @@ details > summary {
   line-height: 17px;
   color: #F16D7F;
   cursor: pointer;
+  &:hover {
+    color: #ff1472;
+  }
 }
 .nav_close {
   position: absolute;

@@ -104,6 +104,12 @@ body {
   z-index: 2;
 }
 
+.nav_list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 #menu:checked ~ .nav {
   display: block;
   height: 50%;
@@ -122,6 +128,7 @@ details > summary {
 }
 
 .nav_link {
+  margin: 10px;
   text-decoration: none;
   color: #F16D7F;
 }
@@ -137,6 +144,9 @@ details > summary {
   line-height: 17px;
   color: #F16D7F;
   cursor: pointer;
+}
+.nav_item:hover {
+  color: #ff1472;
 }
 
 .nav_close {
