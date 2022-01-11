@@ -61,6 +61,50 @@ fill: #FFFFFF;
   line-height: 14px;
   color: #FFFFFF;
 }
+
+.basket_list {
+  position: absolute;
+  z-index: 3;
+  right: 20px;
+  top: 75px;
+  background: white;
+  padding: 10px;
+  border: 1px solid #ebebeb;
+  border-radius: 3px;
+  font-size: 14px;
+  display: none;
+}
+
+@media (min-width: 340px) {
+  .basket_list {
+    font-size: 16px;
+  }
+}
+@media (min-width: 552px) {
+  .basket_list {
+    width: 500px;
+  }
+}
+.basketRow {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ebebeb;
+  padding-bottom: 10px;
+}
+
+.basketHeader {
+  font-weight: bold;
+}
+
+.basketTotal {
+  font-weight: bold;
+  text-align: right;
+}
+.hidden {
+  display: block;
+}
 .nav {
   background-color: #FFFFFF;
   overflow: hidden;
@@ -73,7 +117,11 @@ fill: #FFFFFF;
   transition: height ease-in 0.2s;
   z-index: 2;
 }
-
+.nav_list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 #menu:checked ~ .nav {
   display: block;
   height: 50%;
@@ -90,6 +138,7 @@ details > summary {
   }
 }
 .nav_link {
+  margin: 10px;
   text-decoration: none;
   color: $main-pink;
   &:hover {
@@ -103,6 +152,9 @@ details > summary {
   line-height: 17px;
   color: #F16D7F;
   cursor: pointer;
+  &:hover {
+    color: #ff1472;
+  }
 }
 .nav_close {
   position: absolute;
